@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts 
+block style 
+    style
+      include ../static/style.css
+      include ../static/dancevedio.css
+block content 
+    div.animat
+        marquee.rotation See The Dance Vedio's of Our Student's. On The Given Button's
+    div.text
+        div.para Our Dance teachers educate their students in the technique, performance, and choreography of dance. Some teachers focus their approach on a single style while others work in many forms, among them Kathak ballet, jazz, modern, tap, ballroom, swing, salsa, hip-hop, folk, pole dancing, and traditional dance forms from around the world. Our Dance teachers work in a number of settings, from schools and private studios to community centers and gyms, and with an equally wide variety of students, from young children to elite professionals in premier companies. And We have teachers are themselves dancers and/or choreographers, and bring great knowledge and passion to their work for Student's. Our dance teachers are experienced dancers or choreographers who specialize in one to three particular styles. They may become teachers after ending their professional careers or continue the two simultaneously as teaching artists. Most public and private schools require their dance teachers to have a bachelor's degree in dance as well as a teaching certification, while university-level dance teachers are expected to have an MFA degree.
+    div.container
+        form(action="/kathak" method='get' class='myform')
+            div.press
+                button(class='btn1')
+                    |Click To See Kathak Dance of Our Student's 
+        form(action="/hiphop" method='get' class='myform')
+            div.press
+                button(class='btn2')
+                    |Click To See HipHop Dance of Our Student's
+        form(action="/folk" method='get' class='myform')
+            div.press
+                button(class='btn3')
+                    |Click To See Folk Dance of Our Student's
+        form(action="/salsa" method='get' class='myform')
+            div.press
+                button(class='btn4')
+                    |Click To See Salsa Dance of Our Student's
+        form(action="/contemporary" method='get' class='myform')
+            div.press
+                button(class='btn5')
+                    |Click To See Contemporary Dance of Our Student's
+        form(action="/jazz" method='get' class='myform')
+            div.press
+                button(class='btn6')
+                    |Click To See Jazz Dance of Our Student's
+        form(action="/ballroom" method='get' class='myform')
+            div.press
+                button(class='btn7')
+                    |Click To See Ballroom Dance of Our Student's
+              
+          
+   
+

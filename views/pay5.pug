@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts  
+block style 
+    style
+      include ../static/style.css
+      include ../static/pay5.css
+block content
+    div.contanier
+        h1 Billing Address and Payment
+        div.contanier1
+        h1#text 
+            h3 Accepted Cards
+            div.icon
+                img(src="../static/img/visa.png", title="Visa" alt="" class='img1')
+                img(src="../static/img/debit.png",title="Debit Card" alt="" class='img2')
+                img(src="../static/img/credit.png",title="Credit Card" alt="" class='img3')
+                img(src="../static/img/atm.png",title="Atm Card" alt="" class='img4')
+        form(action="/contemporarypay" method='post' class='myform')
+            input(type="text" , class='myinput' , name='name' , pattern="[a-zA-Z'-'\\s]*" required, placeholder='Enter Your Name')
+            input(type="email" , class='myinput' , name='email' ,required,  placeholder='Enter Your Email')
+            input(type="text" , class='myinput' , name='address' ,required,  placeholder='Enter Your Address')
+            input(type="text" , class='myinput' , name='city' ,required,  placeholder='Enter Your City')
+            input(type="text" , class='myinput',  name='state',required,  placeholder='Enter Your State')
+            input(type="text" , class='myinput',  name='zip', required, placeholder='Enter Your Zip Code')
+            input(type="text" , class='myinput' , name='oncard', required, placeholder='Name On Card')
+            input(type="text" , class='myinput' , name='cardno', required, placeholder='Enter Card Number')
+            input(type="text" , class='myinput' , name='amt', required, placeholder='Enter Full Amount / or in Instalment')
+            input(type="text" , class='myinput' , name='month', required, placeholder='Enter Exp Month')
+            input(type="text" , class='myinput' , name='expyear', required, placeholder='Enter Exp Year')
+            input(type="password" , class='myinput' , name='cvv', required, placeholder='Enter CVV')
+            div.press
+                button(class='btn')
+                    |Pay For Contemporary Dance 
+        

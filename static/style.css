@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #000000c4;
+    text-shadow: 2px 2px #010704
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 3px 11px;
+    font-family: 'Yeon Sung', cursive;
+    margin: 6px 10px;
+    font-size: 20px;
+}
+#navbar li a{
+    padding: 2px;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+}
+#navbar li a:hover{
+    color: rgb(160, 226, 29);
+    transition: all 0.37s ease-in;
+}
+.nav-img img{
+    height: 44px;
+    /* filter: invert(); */
+    margin: 2px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.959);
+    background: center/cover no-repeat url("../static/wp2722961.jpg");
+    height: 657px;
+    /* background-color: red; */
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px #303f92;
+    padding-bottom: 20px;
+} 
+h3{
+    color:white
+}
+#intro div.tiny{
+    font-size: 37px;
+}
+#mission{
+    height: 250px;
+    background-color: #d7e9e945
+}
+#mission h2{
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.card{
+    display:inline-block ;
+    border: 2px solid black;
+    width: 30%;
+    border-radius: 10px;
+    height: 75%;
+    padding: 15px;
+    margin: 2px 20px;
+    
+}
+.card h3{
+    /* color: white; */
+    text-align: center;
+    padding: 2px;
+    font-size: 21px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img{
+    height: 120px;
+}
+.img img{
+    height: inherit;
+}
+.content{
+    padding-right: 41px;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+#sponsers{
+    height: 300px;
+    background-color:#00fff36e
+}
+#sponsers h2{
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.spon{
+    height: 95px;
+    margin: 5px auto;
+}
+.spon img{
+    height: 200%;
+    margin: 3px auto;
+    padding-left: 15px;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: white;
+    background-color: black;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+

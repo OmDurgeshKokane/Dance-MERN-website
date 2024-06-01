@@ -1,0 +1,116 @@
+extends base.pug
+
+block scripts
+     script(src="https://apps.elfsight.com/p/platform.js" defer='')
+block style 
+    style
+      include ../static/style.css
+      include ../static/danceinfo.css
+block content
+    div.contanier
+        div.elfsight-app-c3e10023-c853-4004-a37a-b1c10bdd4aef 
+        h2 Types Of Dance We Have and you can see Information of Particular Dance Type
+        table(border='1')
+            tr
+                th Dance Types
+            tr
+                td  #[a(href ='/kathakinfo') Kathak] 
+            tr
+                td  #[a(href = '/hiphopinfo') Hiphop]
+            tr
+                td  #[a(href = '/folkinfo') Folk]
+            tr
+                td  #[a(href = '/salsainfo') Salsa]
+            tr
+                td  #[a(href = '/Contemporaryinfo') Contemporary] 
+            tr
+                td  #[a(href = '/jazzinfo') Jazz]
+            tr
+                td  #[a(href = '/ballroominfo') Ballroom]
+            tr 
+                td  Choice is Yours!!!
+        h2 Dances Timing Schedules
+        table(border='1')
+            tr
+                th Dances
+                th Days
+                th Timings
+                th Breaks
+                th Class Slept
+            tr
+                td Kathak
+                td Monday
+                td Morning 8.00 to 11.00
+                td 11.00 to 1.00
+                td After 1.00
+            tr 
+                td Hiphop
+                td Tuesday
+                td Afternoon 12.00 to 3.00
+                td 3.00 to 5.00
+                td After 5.00
+            tr
+                td Folk
+                td Wednesday
+                td Evening 5.00 to 8.00
+                td 8.00 to 9.00
+                td After 9.00
+            tr
+                td Salsa
+                td Thursday
+                td Morning 8.00 to 11.00
+                td 11.00 to 1.00
+                td After 1.00
+            tr
+                td Contemporary
+                td Friday
+                td Afternoon 12.00 to 3.00
+                td 3.00 to 5.00
+                td After 5.00
+            tr
+                td Jazz
+                td Saturday
+                td Evening 5.00 to 8.00
+                td 8.00 to 9.00
+                td After 9.00 
+            tr
+                td Ballroom
+                td Sunday
+                td Morning 8.00 to 11.00
+                td 11.00 to 1.00
+                td After 1.00
+                h3 Holidays At Only on Emergencys, Festivals, Independence Day and Republic Day
+        h2 Dance Teachers For Specfic Dance
+        table(border='1')
+            tr
+                th Dance Teacher's Name
+                th Dance They Teach
+            tr
+                td Miss.xyz
+                td Kathak
+            tr 
+                td Mr.xyz
+                td Hiphop
+            tr
+                td Mr.D
+                td Folk
+            tr
+                td Miss.G
+                td Salsa
+            tr
+                td Mr.S
+                td Comtemorary
+            tr
+                td Miss.J
+                td Jazz
+            tr
+                td Mr.U
+                td Ballroom
+        h2 Fill This Form To Know us that which Dance are you chose
+        form(action="/dancetype" method='post' class='myform')
+            input(type="text" , class='myinput' , name='name' , pattern="[a-zA-Z'-'\\s]*" required, placeholder='Enter Your Name')
+            input(type="phone", class='myinput', name='phone', pattern='[7-9]\\d{9}$' maxlength='10' oninvalid="this.setCustomValidity('Please Enter Valid Number')" oninput="setCustomValidity('')" required , placeholder='Enter Your Phone No') 
+            input(type="text", class='myinput', name='dancetype',  required , placeholder='Enter Your Dance Type....')
+            div.press
+                button(class='btn')
+                    |Submit

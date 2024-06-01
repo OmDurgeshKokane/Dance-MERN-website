@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    link(rel='icon' href='../static/img/nav.gif' type='image/icon type')
+    title Om's Dance+ Academy.com
+    block scripts
+    block style 
+  body
+    nav#navbar 
+        ul 
+            div.nav-img
+                img(src="../static/img/nav.gif" title='Om Dance+ Academy.com')
+            li #[a(href ='/home') Home ]
+            li #[a(href ='/danceinfo') Dance Info] 
+            li #[a(href ='/dancevedio') Dance Video] 
+            li #[a(href ='/about') About Us] 
+            li #[a(href ='/contact') Contact Us]
+            li #[a(href ='/payment') Payment]
+            li #[a(href = '/logout') Logout]
+    block content
+    footer#footer 
+        |Copyright © 2021 OmDance+Academy.com | All rights reserved.

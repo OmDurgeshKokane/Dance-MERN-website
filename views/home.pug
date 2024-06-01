@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+    script(src="https://apps.elfsight.com/p/platform.js" defer='')
+block style 
+    style
+        include ../static/style.css
+block content 
+    section#intro
+        div.elfsight-app-c3e10023-c853-4004-a37a-b1c10bdd4aef 
+        div Welcome To Om's Dance+ Academy 
+        div.tiny In Dance There Should Be Plus+
+    section#mission 
+        h2 Our Mission
+        div.card
+            h3 Dance like a Star
+            div.box
+                div.img
+                    img(src="../static/img/logo1.png.png")
+                div.content
+                    p This is Best Dance+ Academy
+        div.card
+            h3 Feel the Dance
+            div.box
+                div.img
+                    img(src="../static/img/logo2.png")
+                div.content
+                    p We Teach our Student to Feel the Dance
+        div.card
+            h3 Expert's are there to Teach
+            div.box
+                div.img
+                    img(src="../static/img/logo3.png")
+                div.content
+                    p We Have Extremely Talented Dance Teacher's
+    section#sponsers 
+        h2 Our Sponsers
+        div.spon 
+            img(src="../static/img/sp1.png", alt="hi")
+            img(src="../static/img/sp2.png", alt="hi") 
+            img(src="../static/img/sp3.png", alt="hi") 
+            img(src="../static/img/sp4.png", alt="hi")

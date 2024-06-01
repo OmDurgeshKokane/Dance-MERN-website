@@ -1,0 +1,61 @@
+extends base.pug
+
+block scripts
+    script(src="https://apps.elfsight.com/p/platform.js" defer='')
+block style 
+    style
+      include ../static/style.css
+      include ../static/payment.css
+block content
+    div.contanier
+        div.elfsight-app-c3e10023-c853-4004-a37a-b1c10bdd4aef 
+        h1 Fee Structure
+        div.box
+            p#name1 Kathak Dance Fees
+                p#kathak ₹
+                    p#price1 5000 INR / Per Month<br>60,000 INR / Year
+                        form(action="/pay1" method="get" class="form")
+                            button(class="btn")
+                                |Pay  
+        div.box
+            p#name2 Hiphop Dance Fees           
+                p#hiphop ₹
+                    p#price2 4000 INR / Per Month<br>48,000 INR / Year
+                        form(action="/pay2" method="get" class="form")
+                            button(class="btn")
+                                |Pay   
+        div.box
+            p#name3 Folk Dance Fees        
+                p#folk ₹
+                    p#price3 4000 INR / Per Month<br>48,000 INR / Year
+                        form(action="/pay3" method="get" class="form")
+                            button(class="btn")
+                                |Pay   
+        div.box
+            p#name4 Salsa Dance Fees            
+                p#salsa ₹
+                    p#price4 6000 INR / Per Month<br>72,000 INR / Year
+                        form(action="/pay4" method="get" class="form")
+                            button(class="btn")
+                                |Pay   
+        div.box
+            p#name5 Contemporary Dance Fees            
+                p#contemporary ₹
+                    p#price5 6000 INR / Per Month<br>72,000 INR / Year
+                        form(action="/pay5" method="get" class="form")
+                            button(class="btn")
+                                |Pay  
+        div.box
+            p#name6 Jazz Dance Fees            
+                p#jazz ₹
+                    p#price6 4000 INR / Per Month<br>48,000 INR / Year
+                        form(action="/pay6" method="get" class="form")
+                            button(class="btn")
+                                |Pay  
+        div.box
+            p#name7 Ballroom Dance Fess            
+                p#ballroom ₹
+                    p#price7 3000 INR / Per Month<br>36,000 INR / Year
+                        form(action="/pay7" method="get" class="form")
+                            button(class="btn")
+                                |Pay  

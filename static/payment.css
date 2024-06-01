@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contanier{
+    height: 100vh;
+}
+body::before{
+    content: "";
+    background:url('../static/img/payment.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+h1{
+    text-align: center;
+    padding-top: 60px;
+    color: #00ff95d9;
+    font-family: cursive;
+    font-size: 37px;
+    text-shadow: 2px 2px #ff7900;
+}
+.box{
+    display: inline-block;
+    border: 3px solid black;
+    height: 33%;
+    width: 20%;
+    padding: 12px;
+    margin: 31px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 3px 3px #000000;
+}
+.box:hover{
+    transform: rotate(1.1deg); 
+    transition: all 0.50s ease-in-out; 
+}
+#kathak{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#hiphop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#folk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#salsa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#contemporary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#jazz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#ballroom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 3%;
+    font-size: 100px;
+}
+#name1{
+    text-align: center;
+    font-size: 18px;
+    color: #00feab;
+    font-weight:bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #9500ff;
+}
+#name2{
+    text-align: center;
+    font-size: 18px;
+    color: #00fe1f;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #259c2f;
+}
+ #name3{
+    text-align: center;
+    font-size: 18px;
+    color: #00c4fe;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #24a6ae;
+ }
+ #name4{
+    text-align: center;
+    font-size: 18px;
+    color: #febb00;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #ff9100;
+ }
+ #name5{
+    text-align: center;
+    font-size: 18px;
+    color: #00feac;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #359491;
+ }
+ #name6{
+    text-align: center;
+    font-size: 18px;
+    color: #d7fe00;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #4cae27;
+ }
+ #name7{
+    text-align: center;
+    font-size: 18px;
+    color: #fafe00;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px #2baa1e;
+ }
+ #price1{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price2{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price3{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price4{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price5{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price6{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ #price7{
+    position: relative;
+    float: right;
+    padding: 3px;
+    margin-top: -35%;
+    font-size: 15px;
+    margin-right: -3px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+ }
+ .form{
+    text-align: center;
+ }
+ .btn{
+    outline: none;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px #ffffff;
+    cursor: pointer;
+ }
+ .btn{
+    transition: 1s;
+}
+.btn:hover{
+    width: 45%;
+}
